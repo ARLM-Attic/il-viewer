@@ -4,7 +4,7 @@
     <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
     <ProductVersion>9.0.30729</ProductVersion>
     <SchemaVersion>2.0</SchemaVersion>
-    <ProjectGuid>{02357FB2-0945-4D17-9545-BE661518EA8E}</ProjectGuid>
+    <ProjectGuid>{357C3242-7A59-4DB0-B6E9-86C7CA4C85D4}</ProjectGuid>
     <OutputType>Library</OutputType>
     <StartupObject>
     </StartupObject>
@@ -96,7 +96,7 @@
     </COMReference>
   </ItemGroup>
   <ItemGroup>
-    <Content Include="..\..\..\..\Users\X113860\Documents\Visual Studio 2008\Addins\ILViewer - For Testing.AddIn">
+    <Content Include="..\..\..\..\Users\x104606\Documents\Visual Studio 2008\Addins\ILViewer - For Testing.AddIn">
       <Link>ILViewer - For Testing.AddIn</Link>
     </Content>
     <Content Include="ILViewer.AddIn" />
