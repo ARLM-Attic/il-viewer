@@ -5,14 +5,14 @@
     <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
     <ProductVersion>9.0.30729</ProductVersion>
     <SchemaVersion>2.0</SchemaVersion>
-    <ProjectGuid>{357C3242-7A59-4DB0-B6E9-86C7CA4C85D4}</ProjectGuid>
+    <ProjectGuid>{F526AE51-D6EE-4528-B5DF-2D47073C8CC9}</ProjectGuid>
     <OutputType>Library</OutputType>
     <StartupObject>
     </StartupObject>
     <NoStandardLibraries>false</NoStandardLibraries>
     <AssemblyName>ILViewer</AssemblyName>
-    <RootNamespace>ILViewer</RootNamespace>
-    <TargetFrameworkVersion>v4.0</TargetFrameworkVersion>
+    <RootNamespace>ILViewer_3.5</RootNamespace>
+    <TargetFrameworkVersion>v3.5</TargetFrameworkVersion>
     <SccProjectName>SAK</SccProjectName>
     <SccLocalPath>SAK</SccLocalPath>
     <SccAuxPath>SAK</SccAuxPath>
@@ -68,15 +68,12 @@
     <Reference Include="VSLangProj, Version=7.0.3300.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a" />
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="AssemblyInfo.cs">
-      <SubType>Code</SubType>
+    <Compile Include="..\ILViewer\AssemblyInfo.cs">
+      <Link>AssemblyInfo.cs</Link>
     </Compile>
-    <Compile Include="Connect.cs">
-      <SubType>Code</SubType>
+    <Compile Include="..\ILViewer\Connect.cs">
+      <Link>Connect.cs</Link>
     </Compile>
-  </ItemGroup>
-  <ItemGroup>
-    <EmbeddedResource Include="CommandBar.resx" />
   </ItemGroup>
   <ItemGroup>
     <COMReference Include="EnvDTE">
@@ -121,10 +118,6 @@
     </COMReference>
   </ItemGroup>
   <ItemGroup>
-    <Content Include="ILViewer - For Testing.AddIn" />
-    <Content Include="ILViewer.AddIn" />
-  </ItemGroup>
-  <ItemGroup>
     <BootstrapperPackage Include="Microsoft.Net.Client.3.5">
       <Visible>False</Visible>
       <ProductName>.NET Framework 3.5 SP1 Client Profile</ProductName>
@@ -140,6 +133,11 @@
       <ProductName>Windows Installer 3.1</ProductName>
       <Install>true</Install>
     </BootstrapperPackage>
+  </ItemGroup>
+  <ItemGroup>
+    <EmbeddedResource Include="..\ILViewer\CommandBar.resx">
+      <Link>CommandBar.resx</Link>
+    </EmbeddedResource>
   </ItemGroup>
   <Import Project="$(MSBuildBinPath)\Microsoft.CSHARP.Targets" />
   <PropertyGroup>
